@@ -76,7 +76,8 @@
 </head>
 
 <body>
-
+<form action="{{asset('/buscar')}}" method="post" id="formulario">
+	
 <div id="Carnet">
 <div id="apDiv1">
 <form id="form1" name="form1" method="post" action="">
@@ -109,5 +110,7 @@
   <div id="apDiv8">Fecha Exp.:</div>
   <div id="apDiv9">04/04/2015</div>
 </div>
+
+</form>
 </body>
 </html>
