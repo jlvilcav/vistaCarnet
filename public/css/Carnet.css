@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin::0px;
+	padding::0px;
+}
+
+div#Carnet{
+	position:absolute;
+	width:610px;
+	height: 400px;
+	background-image:url(../Imagen/FormatoCarne.png);
+	left: 600px;
+	top: 150px;
+	}
+	
+div#Univ{
+	position:absolute;
+	left:135px;
+	top:76px;
+	width:300px;
+	height: 15px;
+	z-index:7;
+	}
+	
+div#Foto{
+	position:absolute;
+	left:23px;
+	top:103px;
+	width:185px;
+	height: 221px;
+	z-index:6;
+	}
+
+#Codigo {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:1;
+	left: 298px;
+	top: 122px;
+}
+#Apellido {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:2;
+	left: 298px;
+	top: 154px;
+}
+#Nombre {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:3;
+	left: 298px;
+	top: 187px;
+}
+#Facultad {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:4;
+	left: 298px;
+	top: 220px;
+}
+#Carrera {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:5;
+	left: 298px;
+	top: 254px;
+}
+#apDiv1 {
+	position:absolute;
+	width:505px;
+	height:59px;
+	z-index:1;
+	left: 2px;
+	top: -70px;
+}
