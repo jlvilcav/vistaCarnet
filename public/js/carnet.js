@@ -21,5 +21,15 @@ function buscarCarnetAlumno(){
 		$('#vTxtCodigo').focus();
 	});
 
+	$el.llenarCampos = function(dataE){
+		var ApeCompleto = dataE.appaterno + ' ' + dataE.apmaterno;
 
+		//procediendo a llenar los campos
+		$("#vUniv").val(dataE.descripcion);
+		$("#Codigo").val(dataE.codalumno);
+		$("#Apellido").val(dataE.descripcion);
+		$("#Nombre").val(dataE.nombre);
+		$("#Facultad").val(dataE.nomfacultad);
+		$("#Carrera").val(dataE.nomcarr);
+	}
 }
