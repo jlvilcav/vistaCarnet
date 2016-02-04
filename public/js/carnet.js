@@ -6,6 +6,8 @@ var urlBase = "http://"+ dominio + "/reclamaciones/public/";
 $(document).on('ready',function(){
 
 	$("#vBtnBuscar").on('click', function(){
+
+		alert("Hola Jorge :D!");
 		var buscar = new buscarCarnetAlumno();
 		buscar.buscarxCarnet();
 	});
