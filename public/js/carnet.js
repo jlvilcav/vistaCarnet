@@ -32,4 +32,27 @@ function buscarCarnetAlumno(){
 		$("#Facultad").val(dataE.nomfacultad);
 		$("#Carrera").val(dataE.nomcarr);
 	}
+
+	$el.buscarxCarnet = function(){
+		var codigo = $("#vTxtCodigo").val();
+
+		if(codigo.length == 0){
+			alert('por favor llene el campo de documento');
+			$("#vTxtCodigo").focus();
+			return false;
+		}
+
+		$el.url = $el.url + codigo;
+
+		var request = $.ajax({
+			url:  $el.url,
+			method:  "GET",
+			dataType:  "json"
+		});
+
+		request.fail(function( jqXHR, textStatus){
+			console.log( "Request failed: " + textStatus);
+		});
+	}
+	return $el;
 }
