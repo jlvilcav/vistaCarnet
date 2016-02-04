@@ -1,13 +1,15 @@
 // Documento Java Script
 
 var dominio = document.domain;
-var urlBase = "http://"+ dominio + "/reclamaciones/public/";
+var urlBase = "http://"+ dominio + "/vistaCarnet/public/";
 
 $(document).on('ready',function(){
+	$("#formulario").on('submit', function(event){
+		event.preventDefault();
+	});
 
 	$("#vBtnBuscar").on('click', function(){
 
-		alert("Hola Jorge :D!");
 		var buscar = new buscarCarnetAlumno();
 		buscar.buscarxCarnet();
 	});
@@ -33,23 +35,34 @@ function buscarCarnetAlumno(){
 		$("#Nombre").val(dataE.nombre);
 		$("#Facultad").val(dataE.nomfacultad);
 		$("#Carrera").val(dataE.nomcarr);
+
+		alert(ApeCompleto);
 	}
 
 	$el.buscarxCarnet = function(){
 		var codigo = $("#vTxtCodigo").val();
-
+		
 		if(codigo.length == 0){
 			alert('por favor llene el campo de documento');
 			$("#vTxtCodigo").focus();
 			return false;
 		}
 
-		$el.url = $el.url + codigo;
+		$el.url = $el.url + $("#vTxtCodigo").val();
 
+		alert($el.url);
 		var request = $.ajax({
 			url:  $el.url,
 			method:  "GET",
 			dataType:  "json"
+		});
+
+		request.done(function(data){
+			if(data[0]){
+				$el.llenarCampos(data[0])
+			}else{
+				$el.trigger('noseEncontro');
+			}
 		});
 
 		request.fail(function( jqXHR, textStatus){

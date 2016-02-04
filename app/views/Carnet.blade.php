@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="../images/foto.jpg">
 <link rel="stylesheet" type="text/css" href="css/Carnet.css"/>
+<script type="text/javascript" src="{{asset('js/carnet.js')}}"></script>
 <title>Documento sin título</title>
 <style type="text/css">
 <!--
@@ -76,18 +78,18 @@
 </head>
 
 <body>
-<form action="{{asset('/buscar')}}" method="post" id="formulario">
+<form id="formulario">
 	
 <div id="Carnet">
 <div id="apDiv1">
-<form id="form1" name="form1">
+
   <label> Codigo:
     <input type="text" name="vTxtCodigo" id="vTxtCodigo" />
   </label>
   <label>
     <input type="submit" name="vBtnBuscar" id="vBtnBuscar" value="Enviar" />
   </label>
-</form>
+
 					
 </div>
       <div id="Univ">  
