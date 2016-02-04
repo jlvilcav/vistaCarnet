@@ -79,7 +79,7 @@
 
 <div id="Carnet">
 <div id="apDiv1">
-<form id="form1" name="form1" method="post" action="">
+<form id="form1" name="form1">
   <label> Codigo:
     <input type="text" name="vTxtCodigo" id="vTxtCodigo" />
   </label>
