@@ -31,12 +31,12 @@ function buscarCarnetAlumno(){
 		//procediendo a llenar los campos
 		$("#vUniv").val(dataE.descripcion);
 		$("#Codigo").val(dataE.codalumno);
-		$("#Apellido").val(dataE.descripcion);
+		$("#Apellido").val(ApeCompleto);
 		$("#Nombre").val(dataE.nombre);
 		$("#Facultad").val(dataE.nomfacultad);
 		$("#Carrera").val(dataE.nomcarr);
 
-		alert(ApeCompleto);
+		//alert(ApeCompleto);
 	}
 
 	$el.buscarxCarnet = function(){
@@ -50,7 +50,7 @@ function buscarCarnetAlumno(){
 
 		$el.url = $el.url + $("#vTxtCodigo").val();
 
-		alert($el.url);
+		//alert($el.url);
 		var request = $.ajax({
 			url:  $el.url,
 			method:  "GET",
