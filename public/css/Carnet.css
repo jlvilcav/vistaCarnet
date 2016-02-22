@@ -5,20 +5,28 @@
 	padding::0px;
 }
 
+.CarUniv{
+    width: 30em;
+    background-color: transparent;
+    border-bottom-style: none; /* */
+    border-width: inherit;
+    border-bottom-color: transparent;
+}
+
 div#Carnet{
 	position:absolute;
 	width:610px;
 	height: 400px;
-	background-image:url(../Imagen/FormatoCarne.png);
-	left: 600px;
-	top: 150px;
+	/*background-image:url("../imagen/FormatoCarne.png");*/
+	left: 20px;
+	top: 250px;
 	}
 	
 div#Univ{
 	position:absolute;
 	left:135px;
 	top:76px;
-	width:300px;
+	/*width:300px;*/
 	height: 15px;
 	z-index:7;
 	}
@@ -79,4 +87,69 @@ div#Foto{
 	z-index:1;
 	left: 2px;
 	top: -70px;
+}
+
+#apDiv2 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:8;
+	left: 220px;
+	top: 122px;
+}
+#apDiv3 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:9;
+	left: 220px;
+	top: 154px;
+}
+#apDiv4 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:10;
+	left: 220px;
+	top: 186px;
+}
+#apDiv5 {
+	position:absolute;
+	width:101px;
+	height:15px;
+	z-index:11;
+	left: 820px;
+	top: 389px;
+}
+#apDiv6 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:11;
+	left: 220px;
+	top: 220px;
+}
+#apDiv7 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:12;
+	left: 220px;
+	top: 254px;
+}
+#apDiv8 {
+	position:absolute;
+	width:75px;
+	height:20px;
+	z-index:13;
+	left: 220px;
+	top: 290px;
+}
+#apDiv9 {
+	position:absolute;
+	width:200px;
+	height:20px;
+	z-index:14;
+	left: 298px;
+	top: 290px;
 }

@@ -92,13 +92,24 @@
 
 					
 </div>
-      <div id="Univ">  
-  <label id="vUniv">Universidad del Santa</label></div>
-  <div id="Codigo"><label value="Hola" text="hola">hola</label> 1245789856322</div>
-  <div id="Apellido">Sanches Perez</div>
-  <div id="Nombre">Miguel</div>
-  <div id="Facultad">Ingeniería</div>
-  <div id="Carrera">Ing. Sistemas</div>
+    <div id="Univ">  
+  		<input type="text" value="" id="vUniv" /> 
+  	</div>
+  	<div id="Codigod"> 
+  		<input type="text" value="" id="Codigo" />
+  	</div>
+	<div id="Apellidod">
+		<input type="text" value="" id="Apellido"  />
+	</div>
+	<div id="Nombred">
+		<input type="text" value="" id="Nombre" />
+	</div>
+	<div id="Facultadd">
+		<input type="text" value="" id="Facultad"/>
+	</div>
+	<div id="Carrerad">
+		<input type="text" value="" id="Carrera"/>
+	</div>
   
   
   <div id="Foto" >
